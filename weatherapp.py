@@ -1,7 +1,7 @@
 import requests
 from config import WEATHERSTACK_API_KEY
-import tkinter as tk
 
+#WEATHERSTACK_API_KEY = "406885e44fb4b78e8d62f10c30bd76f4"
 
 def get_weather(location: str):
     api_key = WEATHERSTACK_API_KEY
@@ -17,7 +17,7 @@ def get_weather(location: str):
     print(f"The weather in {location} is {weather_description}")
     print(f"The temperature in {location} is {temperature} C°")
 
-place = input("Where do you want to see the weather? For example Stockholm or London.")
+place = input("Where do you want to see the weather? For example Stockholm or London.: ")
 get_weather(location=place)
 
 
